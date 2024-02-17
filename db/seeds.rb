@@ -7,3 +7,12 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+["Alice", "Bob"].each_with_index do |name, project|
+  ["'s Adventures in Wonderland", " the Builder"].each do |title|
+    Article.create(title: name + title, body: "This is the body of the article", is_public: true, project: project)
+  end
+  ["'s Secret Thoughts", "'s Private Diary"].each do |title|
+    Article.create(title: name + title, body: "This is the body of the article", is_public: false, project: project)
+  end
+end
