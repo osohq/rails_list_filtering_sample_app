@@ -102,6 +102,15 @@ GEM
     drb (2.2.0)
       ruby2_keywords
     erubi (1.12.0)
+    faraday (2.5.2)
+      faraday-net_http (>= 2.0, < 3.1)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (3.0.2)
+    faraday-net_http_persistent (2.1.0)
+      faraday (~> 2.5)
+      net-http-persistent (~> 4.0)
+    faraday-retry (2.0.0)
+      faraday (~> 2.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -131,6 +140,8 @@ GEM
     minitest (5.22.2)
     msgpack (1.7.2)
     mutex_m (0.2.0)
+    net-http-persistent (4.0.2)
+      connection_pool (~> 2.2)
     net-imap (0.4.10)
       date
       net-protocol
@@ -153,6 +164,10 @@ GEM
       racc (~> 1.4)
     nokogiri (1.16.2-x86_64-linux)
       racc (~> 1.4)
+    oso-cloud (1.5.0.pre.1)
+      faraday (~> 2.5.2)
+      faraday-net_http_persistent (~> 2.0)
+      faraday-retry (~> 2.0.0)
     pg (1.5.5)
     psych (5.1.2)
       stringio
@@ -257,6 +272,7 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  oso-cloud (>= 1.5.0.pre.1)
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 7.1.3)
