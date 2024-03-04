@@ -1,5 +1,5 @@
 facts:
-  has_relation(Article:_, "project", Project:_):
+  has_relation(Article:_, String:project, Project:_):
     db: articles
     query: SELECT id, project FROM articles
 
