@@ -1,12 +1,9 @@
 facts:
   has_relation(Article:_, String:project, Project:_):
-    db: articles
     query: SELECT id, project FROM articles
 
   is_public(Article:_):
-    db: articles
     query: SELECT id FROM articles WHERE is_public
 
-dbs:
-  articles:
-    connection_string:
+sql_types:
+  Article: bigint
