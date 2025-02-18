@@ -9,7 +9,7 @@ To minimize the amount of data that needs to be fetched from the authorization s
 some authorization data is stored in this app's own database, and other
 authorization data is stored in the authorization service.
 [See here](https://www.osohq.com/docs/guides/integrate/filter-lists#list-filtering-with-decentralized-data)
-for more information on authorizing lists with distributed data.
+for more information on authorizing lists with local data.
 
 ## Authorization Policy
 
